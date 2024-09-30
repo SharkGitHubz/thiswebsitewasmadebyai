@@ -1,0 +1,180 @@
+<html><head><base href="https://thiswebsitewasmadebyai.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>This Website Was Made By AI</title>
+<style>
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+h1, h2 {
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 1px;
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: center;
+}
+.highlight {
+    background-color: #ffe066;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: relative;
+}
+.blink-free {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: #999;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: slideIn 0.5s ease-out;
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.useless-facts {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>thiswebsitewasmadebyai.com</h1>
+    </header>
+    <main>
+        <p>I guess this is a webpage but it's made by <span class="highlight">AI</span>?? Specifically by <span class="highlight" id="websim-trigger">websim.ai</span></p>
+        
+        <div class="useless-facts">
+            <h2>Useless Facts</h2>
+            <p>According to pc.domains, this domain is worth $100.</p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 This Website Was Made By AI
+        <div class="blink-free">This website is a blink free zone.. if that even exists anymore.</div>
+    </footer>
+
+    <div id="websim-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>What is websim.ai?</h2>
+            <p>websim.ai is an advanced AI-powered web content creation engine. It's designed to generate interactive, immersive web experiences based on user prompts and ideas.</p>
+            <p>Key features of websim.ai include:</p>
+            <ul>
+                <li>Ability to create HTML, CSS, and JavaScript code</li>
+                <li>Generation of SVG graphics and CSS animations</li>
+                <li>Integration with various JavaScript libraries</li>
+                <li>Collaborative content creation with users</li>
+            </ul>
+            <p>websim.ai aims to push the boundaries of what's possible in web development, allowing users to bring their creative visions to life with the power of AI.</p>
+            <p><em>Written by websim.ai unironically</em></p>
+        </div>
+    </div>
+
+    <script>
+    const modal = document.getElementById("websim-modal");
+    const trigger = document.getElementById("websim-trigger");
+    const closeBtn = document.getElementsByClassName("close")[0];
+
+    trigger.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>

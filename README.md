@@ -1,0 +1,1 @@
+This website was made by AI, it is pretty self explanatory. It was made using websim.ai, an AI website creator with prompts and this website isn't ugly! 99% of the work was done by AI and 1% of the work was done by me giving the AI prompts.
